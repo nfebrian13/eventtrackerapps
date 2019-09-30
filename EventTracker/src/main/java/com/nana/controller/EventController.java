@@ -19,10 +19,17 @@ public class EventController {
 		return "event";
 	}
 
-	@RequestMapping(value = "/event", method = RequestMethod.POST)
+	
+	/* @RequestMapping(value = "/event", method = RequestMethod.POST)
 	public String processEvent(@ModelAttribute("event") Event event) {
 		System.out.println(event);
 		
 		return "event";
+	} */
+	
+	@RequestMapping(value = "/event", method = RequestMethod.POST)
+	public String processEvent(@ModelAttribute("event") Event event) {
+		System.out.println(event);
+		return "redirect:index.html";
 	}
 }
