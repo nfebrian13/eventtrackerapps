@@ -20,7 +20,6 @@ public class EventController {
 		model.addAttribute("event", event);
 		return "event";
 	}
-
 	
 	/* @RequestMapping(value = "/event", method = RequestMethod.POST)
 	public String processEvent(@ModelAttribute("event") Event event) {
